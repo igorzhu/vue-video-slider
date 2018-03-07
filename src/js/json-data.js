@@ -1,5 +1,29 @@
-export var newDataArr = '[{"id":1,"title":"Brother DCP 8070D/ 8085DN","amount":7,"cost":8000},{"id":2,"title":"HP 5500/5550","amount":11,"cost":6500},{"id":3,"title":"Fax-L380/L390/L400","amount":6,"cost":1500},{"id":4,"title":"MF4410/4430/4450/4550D/F4570DN/4580DN ","amount":3,"cost":1700},{"id":5,"title":"I-SENSYS LBP-3250","amount":13,"cost":1700},{"id":6,"title":"LBP-2900/3000/I-SENSYS L3000","amount":18,"cost":1400},{"id":7,"title":"LBP-3200","amount":14,"cost":1500},{"id":8,"title":"ML-2850 D","amount":9,"cost":2100},{"id":9,"title":"ML-4824/4828","amount":25,"cost":1300},{"id":10,"title":"WC 3200","amount":7,"cost":14000},{"id":11,"title":"WC M20/M20i","amount":9,"cost":8000},{"id":12,"title":"3300MFP","amount":21,"cost":1100},{"id":13,"title":"PHASER 3635","amount":7,"cost":10000},{"id":14,"title":"RX WC 3550 ","amount":19,"cost":2600},{"id":15,"title":"WC PE 16","amount":5,"cost":6500},{"id":16,"title":"WC3220/3210","amount":14,"cost":9000},{"id":17,"title":"Brother HL 2035R,2035","amount":4,"cost":7500},{"id":18,"title":"HP 4000/4050","amount":11,"cost":2700},{"id":19,"title":"HP 1100/3200","amount":23,"cost":1350},{"id":20,"title":"НР pro P1566/1606","amount":17,"cost":1800},{"id":21,"title":"I-SENSYS LBP-3010","amount":15,"cost":1700},{"id":22,"title":"LBP-1210","amount":17,"cost":1500},{"id":23,"title":"SCX4321/4521F","amount":13,"cost":5450},{"id":24,"title":"ML1610/1615","amount":16,"cost":2000}]';
+export var videoList = [
+    {
+        src: 'https://player.vimeo.com/external/215830687.hd.mp4?s=9dcef172a3aa2d6ce99dd0c2ad9d477b6da9a4a7&amp;profile_id=174',
+        poster: '../img/Italian_salad_bg.jpg',
+    },
 
-var newtheadArr = '{"id":"id","title":"Наименование","amount":"Количество","cost":"Цена за единицу"}';
+    {
+        src: 'https://player.vimeo.com/external/246400122.hd.mp4?s=9ae3e6e330c669ebe062e475c60a1af50fe1161a&amp;profile_id=175',
+        poster: '../img/fon-2.jpg',
+    },
+
+    {
+        src: 'https://player.vimeo.com/external/246401677.hd.mp4?s=f02d68ec46d91dd5bc556528014bf55df5e99868&amp;profile_id=175',
+        poster: '../img/fon-1.jpg',
+    },
+
+    {
+        src: 'https://player.vimeo.com/external/246401244.hd.mp4?s=b5919e37b8872740d975ba1563a1d7df8ac02354&amp;profile_id=175',
+        poster: '../img/Italian_salad_bg.jpg',
+    },
+
+    {
+        src: 'https://player.vimeo.com/external/219491137.hd.mp4?s=b5ec45755d9706deb330b68881bdc97366a26c48&amp;profile_id=119',
+        poster: '../img/Italian_salad_bg.jpg',
+    }
+];
+
 
 
