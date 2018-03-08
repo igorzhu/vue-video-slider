@@ -6,7 +6,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="video-container"><video-comp></video-comp></div>
+        <div class="video-container">
+            <video-comp v-bind:v-num="videoNum" v-bind:videos="items" v-on:increment="incrementVideoNum()"></video-comp>
+            <div class="controls">
+                <div class="arrows">
+                    <button class="arrow arrow_l" v-on:click="decrementVideoNum()"></button>
+                    <button class="arrow arrow_r" v-on:click="incrementVideoNum()"></button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -11,5 +11,71 @@ body {
 
 .video-container {
     background-color: #000;
+    position: relative;
 }
 
+.controls {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.arrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+}
+
+.arrow {
+    width: 65px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.arrow_l {
+    left: 0;
+    background: url("../img/prev.svg") no-repeat 0 0;
+
+    &:hover {
+        -webkit-transform: translate(-5px, -50%);
+        -moz-transform: translate(-5px, -50%);
+        -ms-transform: translate(-5px, -50%);
+        -o-transform: translate(-5px, -50%);
+        transform: translate(-5px, -50%);
+    }
+}
+
+.arrow_r {
+    right: 0;
+    background: url("../img/next.svg") no-repeat 0 0;
+
+    &:hover {
+        -webkit-transform: translate(5px, -50%);
+        -moz-transform: translate(5px, -50%);
+        -ms-transform: translate(5px, -50%);
+        -o-transform: translate(5px, -50%);
+        transform: translate(5px, -50%);
+    }
+}
