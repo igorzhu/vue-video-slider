@@ -8,10 +8,12 @@ window.onload = function(){
         template: '<video v-on:ended="showNextVideo" autoplay muted v-bind:poster="videos[vNum].poster" controls\n' +
         'v-bind:src="videos[vNum].src" width="100%"\n' +
         '></video>',
-        props: ['vNum', 'videos'],
+        props: ['vNum', 'videos', 'ifPlayed', 'ifPaused'],
         methods: {
             showNextVideo: function(){
                 this.$emit('increment');
+                //console.log(document.getElementsByTagName('video')[0]);
+                console.log(this.$el);
             }
         }
     });
@@ -20,7 +22,9 @@ window.onload = function(){
         el: '.video-container',
         data: {
             items: videoList,
-            videoNum: 0
+            videoNum: 0,
+            isPlayed: true,
+            isPaused: false
         },
         methods: {
             incrementVideoNum: function () {
@@ -36,6 +40,11 @@ window.onload = function(){
                 } else {
                     this.videoNum = this.items.length - 1;
                 }
+            },
+            playPause : function () {
+                this.isPlayed = !(this.isPlayed);
+                this.isPaused = !(this.isPaused);
+                document.getElementsByTagName('video')[0].pause();
             }
     }
     });

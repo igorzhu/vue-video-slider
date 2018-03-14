@@ -2,7 +2,7 @@ const path = require('path');
 var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin'); // чтобы css подключалось файлом, а не тегом <style> в шапке
+const ExtractTextPlugin = require('extract-text-webpack-plugin'); // чтобы scss подключалось файлом, а не тегом <style> в шапке
 const CopyWebpackPlugin = require('copy-webpack-plugin'); // чтобы скопировать картинки и шрифты в папку билда
 
 const PATHS = {

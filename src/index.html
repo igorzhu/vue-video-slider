@@ -7,8 +7,11 @@
 <body>
     <div class="wrapper">
         <div class="video-container">
-            <video-comp v-bind:v-num="videoNum" v-bind:videos="items" v-on:increment="incrementVideoNum()"></video-comp>
+            <video-comp v-bind:v-num="videoNum" v-bind:videos="items" v-bind:if-played="isPlayed" v-bind:if-paused="isPaused" v-on:increment="incrementVideoNum()"></video-comp>
             <div class="controls">
+                <div class="play-pause">
+                    <i class="fa fa-3x fa-fw" v-on:click="playPause" v-bind:class="{'fa-pause' : isPlayed, 'fa-play': isPaused }"></i>
+                </div>
                 <div class="arrows">
                     <button class="arrow arrow_l" v-on:click="decrementVideoNum()"></button>
                     <button class="arrow arrow_r" v-on:click="incrementVideoNum()"></button>
