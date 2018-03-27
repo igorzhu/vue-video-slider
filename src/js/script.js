@@ -12,8 +12,6 @@ window.onload = function(){
         methods: {
             showNextVideo: function(){
                 this.$emit('increment');
-                //console.log(document.getElementsByTagName('video')[0]);
-                console.log(this.$el);
             }
         }
     });
@@ -33,6 +31,8 @@ window.onload = function(){
                 } else {
                     this.videoNum = 0;
                 }
+                this.isPlayed = true;
+                this.isPaused = false;
             },
             decrementVideoNum: function () {
                 if (this.items[this.videoNum-1]){
@@ -40,11 +40,18 @@ window.onload = function(){
                 } else {
                     this.videoNum = this.items.length - 1;
                 }
+                this.isPlayed = true;
+                this.isPaused = false;
             },
             playPause : function () {
+                if (this.isPlayed) {
+                    document.getElementsByTagName('video')[0].pause();
+                } else {
+                    document.getElementsByTagName('video')[0].play();
+                }
                 this.isPlayed = !(this.isPlayed);
                 this.isPaused = !(this.isPaused);
-                document.getElementsByTagName('video')[0].pause();
+
             }
     }
     });
